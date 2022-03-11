@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
     text: req.body.text,
     done: false,
   });
-  const currentCount = parseInt(await redis.getAsync("added_todos"));
+  const currentCount = parseInt(await redis.getAsync("added_todos")) || 0;
   await redis.setAsync("added_todos", currentCount + 1);
   res.send(todo);
 });
