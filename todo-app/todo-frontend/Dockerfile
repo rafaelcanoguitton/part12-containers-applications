@@ -10,7 +10,7 @@ RUN CI=true npm test
 
 RUN npm run build
 
-ENV REACT_APP_BACKEND_URL=http://localhost:3000
+ENV REACT_APP_BACKEND_URL=/api/
 
 EXPOSE 3000
 
