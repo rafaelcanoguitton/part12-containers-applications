@@ -1,3 +1,4 @@
 node_modules
 todo-app/todo-backend/redis_data
 todo-app/todo-backend/mongo_data
+my-app/front-end/cypress
